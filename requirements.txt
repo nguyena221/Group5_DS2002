@@ -2,3 +2,6 @@
 - json
 - csv
 - io
+- os
+- mysql.connector
+- logging
