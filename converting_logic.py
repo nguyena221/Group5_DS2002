@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import json
 import csv
 import io
@@ -51,14 +52,14 @@ def flatten_json(json_data):
 
             "Calories": get_value(nutrients, "calories"),
             "Carbs": get_value(nutrients, "carbohydrateContent"),
-            "Sugar": get_value(nutrients, "sugarContent"),
-            "Fat": get_value(nutrients, "fatContent"),
-            "Saturated_Fat": get_value(nutrients, "saturatedFatContent"),
-            "Unsaturated_Fat": get_value(nutrients, "unsaturatedFatContent"),
             "Cholesterol": get_value(nutrients, "cholesterolContent"),
             "Fiber": get_value(nutrients, "fiberContent"),
             "Protein": get_value(nutrients, "proteinContent"),
+            "Saturated_Fat": get_value(nutrients, "saturatedFatContent"),
             "Sodium": get_value(nutrients, "sodiumContent"),
+            "Sugar": get_value(nutrients, "sugarContent"),
+            "Fat": get_value(nutrients, "fatContent"),
+            "Unsaturated_Fat": get_value(nutrients, "unsaturatedFatContent"),
 
             "Serves": recipe_data.get("serves", ""),
         }
