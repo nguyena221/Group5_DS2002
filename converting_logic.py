@@ -36,7 +36,7 @@ def flatten_json(json_data):
 
         recipe = {
             "ID": recipe_id,
-            "Continent": recipe_data.get("Contient", ""),
+            "Continent": recipe_data.get("Continent", ""),
             "Country_State": recipe_data.get("Country_State", ""),
             "Cuisine": recipe_data.get("cuisine", ""),
             "Title": recipe_data.get("title", ""),
