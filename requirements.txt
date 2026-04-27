@@ -5,3 +5,6 @@
 - os
 - mysql.connector
 - logging
+- boto3
+- urllib.parse
+- 
