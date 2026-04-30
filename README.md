@@ -109,12 +109,21 @@ b) To troubleshoot, go to the Monitor tab in your Lambda function.
 
 c) Click View CloudWatch logs and select the latest Log Stream to confirm the function initialized and successfully moved the data.
 
+## 9. Querying the Database
+Connect to MySQL.
+```
+module load apptainer
+apptainer run ~/mysql-8.0.sif mysql -h ds2002.cgls84scuy1e.us-east-1.rds.amazonaws.com -P 3306 -u USERNAME -p PASSWORD
+```
+Load and Query Database.
+```
+USE recipes;
 
-
-
-
-
-
+SELECT *
+FROM recipes.file_processing_log
+WHERE Status = 'SUCCESS';
+```
+Now you should see all of the JSON recipe files that were successfully coverted to CSV files.
 
 ## Usage:
 
